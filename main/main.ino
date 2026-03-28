@@ -1,5 +1,5 @@
-#include "HorizontalDistanceSensor.h"
-#include "VerticalDistanceSensor.h"
+#include "horizontalDistanceSensor.h"
+#include "verticalDistanceSensor.h"
 
 HorizontalDistanceSensor horizontalDistanceSensor(9, 10);
 VerticalDistanceSensor verticalDistanceSensor(11, 12);
