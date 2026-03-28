@@ -1,12 +1,20 @@
-const int ledPin = 13;
+#include "HorizontalDistanceSensor.h"
+#include "VerticalDistanceSensor.h"
+
+HorizontalDistanceSensor horizontalDistanceSensor(9, 10);
+VerticalDistanceSensor verticalDistanceSensor(11, 12);
 
 void setup() {
-  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+
+  horizontalDistanceSensor.begin();
+  verticalDistanceSensor.begin();
 }
 
 void loop() {
-  digitalWrite(ledPin, HIGH);
-  delay(500);
-  digitalWrite(ledPin, LOW);
+  horizontalDistanceSensor.printReading();
+  verticalDistanceSensor.printReading();
+
+  Serial.println("--------------------");
   delay(500);
 }
