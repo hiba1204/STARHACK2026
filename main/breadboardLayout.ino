@@ -1,6 +1,6 @@
-// verticalDistanceSensor
-// hortizontalDistanceSensor
-// waterSensor
-// servoMotor 
-// activeBuzzer
-// 2 LEDS
+//verticalDistanceSensor
+//hortizontalDistanceSensor
+//waterSensor
+//servoMotor 
+//activeBuzzer
+//2 LEDS
