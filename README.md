@@ -1,1 +1,1 @@
-# STARHACK2026 yay ! :)
+# STARHACK2026 equipe 19
