@@ -1,19 +1,24 @@
 #pragma once
 #include <Arduino.h>
-#include <Servo.h>
 
 class Motor {
 public:
   Motor(uint8_t pin);
-  
+
   void begin();
-  void on();
   void off();
-  void slowVibration();
-  void normalVibration();
-  void fastVibration();
+
+  void setIntensity(uint8_t value); 
+  void slow();
+  void medium();
+  void fast();
+
+  void updateFromDistance(long distance);
 
 private:
   uint8_t pin_;
+<<<<<<< HEAD
   Servo servo_;
+=======
+>>>>>>> de34332 (motor class implemented)
 };
