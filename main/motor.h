@@ -16,4 +16,4 @@ public:
 private:
   uint8_t pin_;
   Servo servo_;
-}
+};
