@@ -25,7 +25,7 @@ void Motor::normalVibration() {
   servo_.write(80);
   delay(60);
   servo_.write(100);
-  delay(60);
+  delay(200);
 }
 
 void Motor::fastVibration() {
