@@ -17,8 +17,4 @@ public:
 
 private:
   uint8_t pin_;
-<<<<<<< HEAD
-  Servo servo_;
-=======
->>>>>>> de34332 (motor class implemented)
 };

@@ -15,16 +15,8 @@ void Motor::setIntensity(uint8_t value) {
   analogWrite(pin_, value);
 }
 
-<<<<<<< HEAD
-void Motor::normalVibration() {
-  servo_.write(80);
-  delay(60);
-  servo_.write(100);
-  delay(200);
-=======
 void Motor::slow() {
   analogWrite(pin_, 80);
->>>>>>> de34332 (motor class implemented)
 }
 
 void Motor::medium() {
