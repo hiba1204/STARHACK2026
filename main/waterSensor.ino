@@ -1,20 +1,19 @@
+#include <Arduino.h>
 #include "waterSensor.h"
 
-WaterLevelSensor::WaterLevelSensor(int pin) : pin_(pin) {
+WaterLevelSensor::WaterLevelSensor(int pin, int threshold)
+  : pin_(pin), threshold_(threshold) {
 }
 
 int WaterLevelSensor::begin() {
   pinMode(pin_, INPUT);
-  Serial.begin(9600);
-  delay(1000);
-  Serial.println("Système StarHack : Prêt !");
   return 1;
 }
 
 int WaterLevelSensor::readLevel() {
   long level = 0;
 
-  for (int i = 0 ; i < 15 ; i++) {
+  for (int i = 0; i < 15; i++) {
     level += analogRead(pin_);
   }
 
@@ -22,5 +21,5 @@ int WaterLevelSensor::readLevel() {
 }
 
 int WaterLevelSensor::isSubmerged() {
-  return readLevel() >= 50;
+  return readLevel() >= threshold_;
 }
