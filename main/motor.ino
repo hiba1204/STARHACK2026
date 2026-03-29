@@ -61,17 +61,17 @@ void Motor::updateFromDistance(long distance) {
   }
 
   // Much slower and gentler vibration map
-  if (distance <= 12) {
+  if (distance <= 20) {
     setPulseProfile(6, 75, 0, 0, now);      // continuous only when extremely close
     applyOutput(true);
     return;
-  } else if (distance <= 22) {
+  } else if (distance <= 40) {
     setPulseProfile(5, 68, 70, 500, now);
-  } else if (distance <= 35) {
+  } else if (distance <= 80) {
     setPulseProfile(4, 60, 65, 900, now);
-  } else if (distance <= 50) {
+  } else if (distance <= 100) {
     setPulseProfile(3, 52, 55, 1400, now);
-  } else if (distance <= 75) {
+  } else if (distance <= 150) {
     setPulseProfile(2, 45, 45, 2200, now);
   } else {
     setPulseProfile(1, 38, 35, 3200, now);
