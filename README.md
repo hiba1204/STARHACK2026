@@ -19,7 +19,7 @@ Unlike a traditional cane, CanN'Go can:
 An ultrasonic sensor detects obstacles in front of the user.
 The cane provides **adaptive haptic feedback**: the closer the obstacle, the stronger the vibration.
 
-## 2. Ground Change Detection
+### 2. Ground Change Detection
 A second ultrasonic sensor points downward to monitor the ground. The system detects significant distance variation that may indicate:
 - stairs;
 - holes;
@@ -28,7 +28,7 @@ A second ultrasonic sensor points downward to monitor the ground. The system det
 
 When a ground hazard is confirmed, the cane triggers a **sound alert**.
 
-## 3. Water detection
+### 3. Water detection
 A water sensor detects wet surfaces or puddles.
 When water is detected, the cane emits a dedicated **audio warning**.
 
