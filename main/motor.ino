@@ -60,9 +60,8 @@ void Motor::updateFromDistance(long distance) {
     return;
   }
 
-  // Much slower and gentler vibration map
   if (distance <= 20) {
-    setPulseProfile(6, 75, 0, 0, now);      // continuous only when extremely close
+    setPulseProfile(6, 75, 0, 0, now);
     applyOutput(true);
     return;
   } else if (distance <= 40) {
