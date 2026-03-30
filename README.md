@@ -1,4 +1,5 @@
 # CanN'Go - Smart Cane for Safer Mobility
+**2nd Place – StarHack 2026**
 ![Logo](./assets/logo.png)
 
 ## Overview
