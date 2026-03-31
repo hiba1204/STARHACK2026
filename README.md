@@ -12,7 +12,9 @@ Unlike a traditional cane, CanN'Go can:
 - detect water hazards on the ground.
 
 ## Prototype
-*(Pictures coming soon)*
+<p align="center">
+  <img src="./assets/prototype.gif" width="500"/>
+</p>
 
 ## Main Features
 
@@ -76,8 +78,3 @@ CanN'Go improves accessibility and safety for visually impaired users by:
 ## Future Improvements
 - Improve the precision of ground hazard detection
 - Explore additional assistive features such as navigation and fall detection
-
-## Prototype
-<p align="center">
-  <img src="./assets/prototype.gif" width="500"/>
-</p>
