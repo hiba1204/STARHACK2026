@@ -78,4 +78,6 @@ CanN'Go improves accessibility and safety for visually impaired users by:
 - Explore additional assistive features such as navigation and fall detection
 
 ## Prototype
-![Prototype](./assets/prototype.png)
+<p align="center">
+  <img src="./assets/prototype.gif" width="500"/>
+</p>
